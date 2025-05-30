@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obèianske zdruenie Vèielka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0; 
+      font-family: 'Open Sans', sans-serif; 
+      background: #FFF8E7; 
+      color: #4A4A4A;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      background: #F9D342;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #4A4A4A;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      height: 300px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+    }
+    .btn {
+      margin-top: 15px;
+      background: #A3D9A5;
+      color: #4A4A4A;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #88c77a;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #F9D342;
+      border-bottom: 3px solid #F9D342;
+      display: inline-block;
+    }
+    .about, .program, .news, .contact {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background: #F9D342;
+      color: #4A4A4A;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Kontakt formular */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    form label {
+      margin: 10px 0 5px;
+    }
+    form input, form textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form button {
+      margin-top: 15px;
+      background: #F9D342;
+      border: none;
+      padding: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #e0c730;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 10px 10px 0 0;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Vèielka</div>
+    <nav>
+      <a href="#domov">Domov</a>
+      <a href="#onas">O nás</a>
+      <a href="#program">Program</a>
+      <a href="#novinky">Novinky</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="domov">
+    <h1>Vitajte vo Vèielke</h1>
+    <p>Mieste radosti, uèenia a spoloèného rastu</p>
+    <button class="btn" onclick="document.location='#onas'">Viac o nás</button>
+  </section>
+
+  <section class="about" id="onas">
+    <h2>O obèianskom zdruení Vèielka</h2>
+    <p>Vèielka vznikla z iniciatívy rodièov a pedagógov, ktorí veria v silu komunity a spoloèného rastu. Ako nezisková organizácia sa venujeme podpore rodín s demi a vytváraniu programov, ktoré rozvíjajú kreativitu, pohyb a sociálne zruènosti detí. Naším poslaním je by oporou pre rodièov a inšpiráciou pre deti.</p>
+  </section>
+
+  <section class="program" id="program">
+    <h2>Naše aktivity a program</h2>
+    <p>Organizujeme pravidelné a jednorazové aktivity, ktoré sú prispôsobené rôznym vekovım skupinám detí. Ponúkame tvorivé dielne, pohybové hry, vzdelávacie workshopy a komunitné podujatia. Všetky naše aktivity sú navrhnuté tak, aby podporovali rozvoj detí a zároveò spájali rodiny v príjemnom prostredí.</p>
+  </section>
+
+  <section class="news" id="novinky">
+    <h2>Èo je nové vo Vèielke?</h2>
+    <p>Sledujte aktuálne správy, plánované akcie a úspechy nášho zdruenia. Organizujeme rodinné dni, tvorivé workshopy, prednášky a ïalšie podujatia pre deti aj dospelıch. Zapojte sa do našej komunity a buïte s nami v kontakte.</p>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <h2>Kontaktujte nás</h2>
+    <p>Máte otázky alebo chcete spolupracova? Radi vám odpovieme!</p>
+    <p><strong>Adresa:</strong> [tu doplò adresu]</p>
+    <p><strong>Telefón:</strong> [tu doplò èíslo]</p>
+    <p><strong>E-mail:</strong> [tu doplò e-mail]</p>
+    
+    <form>
+      <label for="name">Meno</label>
+      <input type="text" id="na
